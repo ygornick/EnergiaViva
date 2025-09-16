@@ -18,1151 +18,1158 @@ src="https://www.facebook.com/tr?id=805973925446848&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta Gratuita | Radiestesia e Reiki</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="https://i.ibb.co/Cp7cmDhR/lotus.png">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .btn-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            transition: all 0.3s ease;
-        }
-        
-        .btn-gradient:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-        }
-        
-        .lotus-bg {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0e7ff' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v30H30zM0 30c0-16.569 13.431-30 30-30v30H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            width: 100%;
-        }
-        
-        .video-wrapper iframe,
-        .video-wrapper .video-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-        }
-        
-        .video-placeholder {
-            background: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .video-placeholder:hover {
-            transform: scale(1.02);
-        }
-        
-        .video-thumbnail {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 12px;
-        }
-        
-        .play-button-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-        
-        .play-button-overlay:hover {
-            background: rgba(255, 255, 255, 1);
-            transform: translate(-50%, -50%) scale(1.1);
-        }
-        
-        .play-icon {
-            width: 32px;
-            height: 32px;
-            fill: #667eea;
-            margin-left: 4px;
-        }
-        
-        .countdown-timer {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .countdown-box {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 12px;
-            padding: 12px 16px;
-            text-align: center;
-            min-width: 80px;
-        }
-        
-        .countdown-number {
-            display: block;
-            font-size: 28px;
-            font-weight: bold;
-            line-height: 1;
-            margin-bottom: 4px;
-        }
-        
-        .countdown-label {
-            display: block;
-            font-size: 14px;
-            opacity: 0.8;
-        }
-        
-        /* Limited Spots Badge */
-        .limited-spots {
-            background: #ff6b6b;
-            color: white;
-            font-weight: bold;
-            padding: 8px 16px;
-            border-radius: 50px;
-            display: inline-block;
-            animation: pulse 1.5s infinite;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulta Gratuita | Radiestesia e Reiki</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="icon" type="image/png" href="https://i.ibb.co/Cp7cmDhR/lotus.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-        /* Mobile Optimizations */
-        @media (max-width: 768px) {
-            /* Hero Section Mobile */
-            .hero-gradient {
-                padding-top: 120px;
-                padding-bottom: 40px;
-            }
-            
-            /* Video Wrapper Mobile - 16:9 aspect ratio, full width */
-            .video-wrapper {
-                padding-bottom: 56.25%; /* Mantém 16:9 aspect ratio */
-                margin-bottom: 2rem;
-                border-radius: 8px;
-            }
-            
-            /* Main video container - full width on mobile, edge to edge */
-            .hero-gradient .container .max-w-4xl {
-                max-width: 100%;
-                padding: 0;
-            }
-            
-            /* Video container mobile - remove padding for edge-to-edge */
-            .mb-8.max-w-4xl.mx-auto.px-4.md\\:px-0 {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-                margin-left: 0;
-                margin-right: 0;
-                max-width: 100%;
-            }
-            
-            /* Countdown timer mobile */
-            .countdown-timer {
-                flex-wrap: wrap;
-                gap: 10px;
-                justify-content: center;
-            }
-            
-            .countdown-box {
-                min-width: 70px;
-                padding: 8px;
-                margin: 0;
-            }
-            
-            .countdown-number {
-                font-size: 24px;
-            }
-            
-            .countdown-label {
-                font-size: 12px;
-            }
-            
-            /* Form mobile optimizations */
-            .max-w-2xl {
-                max-width: 100%;
-                margin: 0 1rem;
-            }
-            
-            .bg-white.bg-opacity-20 {
-                padding: 1.5rem;
-                margin-bottom: 2rem;
-            }
-            
-            /* Grid mobile - stack vertically */
-            .grid.md\\:grid-cols-2 {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            /* Button mobile */
-            .btn-gradient {
-                width: 100%;
-                padding: 1rem 2rem;
-                font-size: 1.1rem;
-            }
-            
-            /* Hero content mobile */
-            .flex.flex-col.md\\:flex-row {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .md\\:w-1\\/2 {
-                width: 100%;
-                margin-bottom: 2rem;
-            }
-            
-            /* Typography mobile */
-            .text-4xl.md\\:text-5xl {
-                font-size: 2rem;
-                line-height: 1.2;
-                margin-bottom: 1.5rem;
-            }
-            
-            .text-xl {
-                font-size: 1.1rem;
-                margin-bottom: 2rem;
-            }
-            
-            /* Trust badges mobile */
-            .flex.flex-wrap.justify-center {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-            
-            /* Limited spots badge mobile */
-            .limited-spots {
-                font-size: 0.9rem;
-                padding: 6px 12px;
-                text-align: center;
-                display: block;
-                margin: 0 1rem;
-            }
-            
-            /* Navigation mobile improvements */
-            .container.mx-auto.px-6 {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            
-            /* Section padding mobile */
-            .py-20 {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-            
-            /* Benefits grid mobile */
-            .grid.md\\:grid-cols-2.lg\\:grid-cols-3 {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            
-            /* Testimonials mobile */
-            .grid.md\\:grid-cols-3 {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            
-            /* FAQ mobile */
-            .max-w-4xl {
-                max-width: 100%;
-                padding: 0 1rem;
-            }
-            
-            /* Footer mobile */
-            .grid.md\\:grid-cols-4 {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
-            }
-        }
-        
-        /* Portrait orientation specific */
-        @media (max-width: 768px) and (orientation: portrait) {
-            /* Hero section adjustments for portrait */
-            .hero-gradient {
-                min-height: 100vh;
-                display: flex;
-                align-items: center;
-            }
-            
-            /* Form positioning for portrait */
-            .max-w-2xl.mx-auto.mb-12 {
-                margin-top: 1rem;
-                margin-bottom: 2rem;
-            }
-        }
-        
-        /* Small mobile devices */
-        @media (max-width: 480px) {
-            .text-2xl.md\\:text-3xl {
-                font-size: 1.5rem;
-            }
-            
-            .text-lg {
-                font-size: 1rem;
-            }
-            
-            .py-4.px-12 {
-                padding: 0.75rem 1.5rem;
-                font-size: 1rem;
-            }
-            
-            .countdown-box {
-                min-width: 60px;
-                padding: 6px;
-            }
-            
-            .countdown-number {
-                font-size: 20px;
-            }
-            
-            .countdown-label {
-                font-size: 10px;
-            }
-        }
+* {
+font-family: 'Inter', sans-serif;
+}
 
-    </style>
+.hero-gradient {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.btn-gradient {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.lotus-bg {
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0e7ff' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v30H30zM0 30c0-16.569 13.431-30 30-30v30H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.video-wrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+height: 0;
+overflow: hidden;
+border-radius: 12px;
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+width: 100%;
+}
+
+.video-wrapper iframe,
+.video-wrapper .video-placeholder {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 12px;
+}
+
+.video-placeholder {
+background: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.video-placeholder:hover {
+transform: scale(1.02);
+}
+
+.video-thumbnail {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 12px;
+}
+
+.play-button-overlay {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: rgba(255, 255, 255, 0.9);
+border-radius: 50%;
+width: 80px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+}
+
+.play-button-overlay:hover {
+background: rgba(255, 255, 255, 1);
+transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-icon {
+width: 32px;
+height: 32px;
+fill: #667eea;
+margin-left: 4px;
+}
+
+.countdown-timer {
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.countdown-box {
+background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 12px;
+padding: 12px 16px;
+text-align: center;
+min-width: 80px;
+}
+
+.countdown-number {
+display: block;
+font-size: 28px;
+font-weight: bold;
+line-height: 1;
+margin-bottom: 4px;
+}
+
+.countdown-label {
+display: block;
+font-size: 14px;
+opacity: 0.8;
+}
+
+/* Limited Spots Badge */
+.limited-spots {
+background: #ff6b6b;
+color: white;
+font-weight: bold;
+padding: 8px 16px;
+border-radius: 50px;
+display: inline-block;
+animation: pulse 1.5s infinite;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+/* Hero Section Mobile */
+.hero-gradient {
+padding-top: 120px;
+padding-bottom: 40px;
+}
+
+/* Video Wrapper Mobile - 16:9 aspect ratio, full width */
+.video-wrapper {
+padding-bottom: 56.25%; /* Mantém 16:9 aspect ratio */
+margin-bottom: 2rem;
+border-radius: 8px;
+}
+
+/* Main video container - full width on mobile, edge to edge */
+.hero-gradient .container .max-w-4xl {
+max-width: 100%;
+padding: 0;
+}
+
+/* Video container mobile - remove padding for edge-to-edge */
+.mb-8.max-w-4xl.mx-auto.px-4.md\\:px-0 {
+padding-left: 0 !important;
+padding-right: 0 !important;
+margin-left: 0;
+margin-right: 0;
+max-width: 100%;
+}
+
+/* Countdown timer mobile */
+.countdown-timer {
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+}
+
+.countdown-box {
+min-width: 70px;
+padding: 8px;
+margin: 0;
+}
+
+.countdown-number {
+font-size: 24px;
+}
+
+.countdown-label {
+font-size: 12px;
+}
+
+/* Form mobile optimizations */
+.max-w-2xl {
+max-width: 100%;
+margin: 0 1rem;
+}
+
+.bg-white.bg-opacity-20 {
+padding: 1.5rem;
+margin-bottom: 2rem;
+}
+
+/* Grid mobile - stack vertically */
+.grid.md\\:grid-cols-2 {
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+/* Button mobile */
+.btn-gradient {
+width: 100%;
+padding: 1rem 2rem;
+font-size: 1.1rem;
+}
+
+/* Hero content mobile */
+.flex.flex-col.md\\:flex-row {
+flex-direction: column;
+text-align: center;
+}
+
+.md\\:w-1\\/2 {
+width: 100%;
+margin-bottom: 2rem;
+}
+
+/* Typography mobile */
+.text-4xl.md\\:text-5xl {
+font-size: 2rem;
+line-height: 1.2;
+margin-bottom: 1.5rem;
+}
+
+.text-xl {
+font-size: 1.1rem;
+margin-bottom: 2rem;
+}
+
+/* Trust badges mobile */
+.flex.flex-wrap.justify-center {
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
+/* Limited spots badge mobile */
+.limited-spots {
+font-size: 0.9rem;
+padding: 6px 12px;
+text-align: center;
+display: block;
+margin: 0 1rem;
+}
+
+/* Navigation mobile improvements */
+.container.mx-auto.px-6 {
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+/* Section padding mobile */
+.py-20 {
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+/* Benefits grid mobile */
+.grid.md\\:grid-cols-2.lg\\:grid-cols-3 {
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
+
+/* Testimonials mobile */
+.grid.md\\:grid-cols-3 {
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
+
+/* FAQ mobile */
+.max-w-4xl {
+max-width: 100%;
+padding: 0 1rem;
+}
+
+/* Footer mobile */
+.grid.md\\:grid-cols-4 {
+grid-template-columns: 1fr;
+gap: 2rem;
+text-align: center;
+}
+}
+
+/* Portrait orientation specific */
+@media (max-width: 768px) and (orientation: portrait) {
+/* Hero section adjustments for portrait */
+.hero-gradient {
+min-height: 100vh;
+display: flex;
+align-items: center;
+}
+
+/* Form positioning for portrait */
+.max-w-2xl.mx-auto.mb-12 {
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+.text-2xl.md\\:text-3xl {
+font-size: 1.5rem;
+}
+
+.text-lg {
+font-size: 1rem;
+}
+
+.py-4.px-12 {
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+}
+
+.countdown-box {
+min-width: 60px;
+padding: 6px;
+}
+
+.countdown-number {
+font-size: 20px;
+}
+
+.countdown-label {
+font-size: 10px;
+}
+}
+
+</style>
 </head>
 <body class="bg-purple-50 lotus-bg">
-    <!-- Header/Navigation -->
-    <header class="fixed w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <i class="fas fa-spa text-3xl text-purple-600 mr-3" style="line-height: 1;"></i>
-                    <span class="text-xl font-bold text-gray-800" style="line-height: 1;">Método<span class="text-purple-600">Florecer</span></span>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">Sobre</a>
-                    <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium">Benefícios</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Depoimentos</a>
-                    <a href="#video-testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Vídeos</a>
-                </nav>
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-gray-700 focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
-            <div class="flex flex-col space-y-4">
-                <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">Sobre</a>
-                <a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium">Benefícios</a>
-                <a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Depoimentos</a>
-                <a href="#video-testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Vídeos</a>
-                <a href="#consultation-form" class="btn-gradient text-white py-2 px-6 rounded-full text-center font-medium">Quero minha consulta gratuita</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-gradient pt-32 pb-10 text-white relative overflow-hidden">
-        <div class="container mx-auto px-6">
-            <!-- Limited Spots Alert -->
-            <div class="text-center mb-8">
-                <span class="limited-spots">
-                    <i class="fas fa-exclamation-circle mr-2"></i>VAGAS LIMITADAS: Apenas 10 consultas gratuitas disponíveis esta semana
-                </span>
-            </div>
-            
-            <!-- Vídeo Principal -->
-            <div class="mb-8 max-w-4xl mx-auto px-4 md:px-0">
-                <div class="video-wrapper shadow-2xl">
-                    <div class="video-placeholder" id="main-video-placeholder">
-                        <img src="video_main_thumbnail_free.png" alt="Consulta Gratuita de Radiestesia e Reiki" class="video-thumbnail">
-                        <div class="play-button-overlay">
-                            <div class="play-icon">
-                                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                    <iframe id="main-youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" title="Consulta Gratuita de Radiestesia e Humanoterapia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none;"></iframe>
-                </div>
-            </div>
-
-            <!-- Countdown Timer -->
-            <div class="text-center mb-8">
-                <h3 class="text-2xl font-bold mb-4">Esta oferta expira em:</h3>
-                <div class="countdown-timer" id="countdown">
-                    <div class="countdown-box">
-                        <span class="countdown-number" id="days">01</span>
-                        <span class="countdown-label">Dias</span>
-                    </div>
-                    <div class="countdown-box">
-                        <span class="countdown-number" id="hours">23</span>
-                        <span class="countdown-label">Horas</span>
-                    </div>
-                    <div class="countdown-box">
-                        <span class="countdown-number" id="minutes">59</span>
-                        <span class="countdown-label">Minutos</span>
-                    </div>
-                    <div class="countdown-box">
-                        <span class="countdown-number" id="seconds">59</span>
-                        <span class="countdown-label">Segundos</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Formulário de Inscrição -->
-            <div class="max-w-2xl mx-auto mb-12 px-4 md:px-0" id="consultation-form">
-                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-2xl border border-white border-opacity-30">
-                    <div class="text-center mb-6">
-                        <h3 class="text-xl md:text-2xl lg:text-3xl font-bold mb-2">Garante Sua Vaga Agora!</h3>
-                        <p class="text-base md:text-lg opacity-90">Preencha os dados abaixo e receba sua consulta gratuita</p>
-                    </div>
-                    
-                    <form action="https://formsubmit.co/energia.viva77@gmail.com" method="POST" id="consultation-form" class="space-y-4 md:space-y-6">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_next" value="https://chat.whatsapp.com/Hn6FghsSjOp1AxRiSpds1U">
-                        <input type="hidden" name="_subject" value="Nova Consulta Gratuita - Radiestesia">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                            <div class="form-group md:col-span-2 lg:col-span-1">
-                                <label for="nome" class="block text-sm font-medium mb-2 text-white">Nome Completo *</label>
-                                <input type="text" id="nome" name="nome" required 
-                                       class="w-full px-4 py-3 md:py-3 rounded-lg bg-white bg-opacity-90 border border-transparent focus:border-purple-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all duration-300 text-gray-800 placeholder-gray-500 text-base"
-                                       placeholder="Digite seu nome completo">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="telefone" class="block text-sm font-medium mb-2 text-white">Telefone/WhatsApp *</label>
-                                <input type="tel" id="telefone" name="telefone" required 
-                                       class="w-full px-4 py-3 md:py-3 rounded-lg bg-white bg-opacity-90 border border-transparent focus:border-purple-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all duration-300 text-gray-800 placeholder-gray-500 text-base"
-                                       placeholder="(11) 99999-9999">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="block text-sm font-medium mb-2 text-white">E-mail *</label>
-                            <input type="email" id="email" name="email" required 
-                                   class="w-full px-4 py-3 md:py-3 rounded-lg bg-white bg-opacity-90 border border-transparent focus:border-purple-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all duration-300 text-gray-800 placeholder-gray-500 text-base"
-                                   placeholder="seu@email.com">
-                        </div>
-                        
-                        <div class="text-center pt-4">
-                            <button type="submit" class="btn-gradient text-white py-4 px-8 md:px-12 rounded-full text-lg md:text-xl font-bold shadow-lg transform transition-all duration-300 hover:scale-105 w-full md:w-auto">
-                                <i class="fas fa-calendar-check mr-3"></i>QUERO GARANTIR MEU LUGAR
-                            </button>
-                        </div>
-                        
-                        <div class="text-center text-xs md:text-sm opacity-80 mt-4">
-                            <i class="fas fa-lock mr-1"></i>Seus dados estão seguros e protegidos
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center justify-center pt-6">
-                <div class="md:w-1/2 mb-12 md:mb-0 text-center">
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Agende sua <span class="text-purple-200">CONSULTA GRATUITA</span> de Radiestesia e Reiki</h1>
-                    <p class="text-xl mb-8">Descubra em apenas uma sessão os bloqueios energéticos que estão impedindo seu progresso. Essa é a proposta do nosso MÉTODO exclusivo de tratamento, onde utilizamos a Radiestesia e o Reiki para mapear e reequilibrar seu campo energético, promovendo saúde integral e clareza mental.</p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-                        <a href="#consultation-form" class="btn-gradient text-white py-4 px-8 rounded-full text-lg font-bold text-center">
-                            <i class="fab fa-whatsapp mr-2"></i>QUERO ADQUIRIR MINHA CONSULTA GRATUITA
-                        </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
-                    <div class="relative">
-                        <img src="https://i1.sndcdn.com/artworks-000043329368-ijq7ke-t500x500.jpg" class="rounded-lg shadow-xl">
-                        <div class="absolute -bottom-6 -left-6 bg-purple-300 text-purple-900 py-2 px-6 rounded-full font-bold shadow-lg">
-                            <i class="fas fa-award mr-2"></i> Terapeuta Certificada
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Indicators -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
-                <div class="flex items-center space-x-3">
-                    <div class="bg-purple-100 p-3 rounded-full">
-                        <i class="fas fa-users text-purple-600 text-2xl"></i>
-                    </div>
-                    <div>
-                        <div class="text-2xl font-bold text-gray-800">TOTALMENTE</div>
-                        <div class="text-gray-600">GRATUITO</div>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <div class="bg-yellow-100 p-3 rounded-full">
-                        <i class="fas fa-star text-yellow-500 text-2xl"></i>
-                    </div>
-                    <div>
-                        <div class="text-2xl font-bold text-gray-800">4.9/5</div>
-                        <div class="text-gray-600">Avaliações</div>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <div class="bg-green-100 p-3 rounded-full">
-                        <i class="fas fa-calendar-alt text-green-600 text-2xl"></i>
-                    </div>
-                    <div>
-                        <div class="text-2xl font-bold text-gray-800">5 Anos</div>
-                        <div class="text-gray-600">de Experiência</div>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <div class="bg-purple-100 p-3 rounded-full">
-                        <i class="fas fa-leaf text-purple-600 text-2xl"></i>
-                    </div>
-                    <div>
-                        <div class="text-2xl font-bold text-gray-800">100%</div>
-                        <div class="text-gray-600">Natural</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">O Que Você Vai Descobrir Na Sua Consulta Gratuita</h2>
-                    <div class="w-24 h-1 bg-purple-600 mx-auto mb-8"></div>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-                    <div>
-                        <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Diagnóstico Energético Completo</h3>
-                        <p class="text-lg text-gray-600 mb-8">Na sua consulta gratuita, você receberá um diagnóstico energético completo que revelará os bloqueios que estão impedindo seu progresso e bem-estar. Entenda as causas profundas dos seus desafios atuais.</p>
-                        
-                        <div class="space-y-6 mb-8">
-                            <div class="flex items-start space-x-4">
-                                <div class="bg-purple-100 p-2 rounded-full flex-shrink-0">
-                                    <i class="fas fa-search text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-2">Identificação de Bloqueios</h4>
-                                    <p class="text-gray-600">Descubra quais desequilíbrios energéticos estão afetando sua saúde e bem-estar.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <div class="bg-purple-100 p-2 rounded-full flex-shrink-0">
-                                    <i class="fas fa-heart text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-2">Plano de Harmonização</h4>
-                                    <p class="text-gray-600">Receba um plano personalizado para restaurar seu equilíbrio energético natural.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <div class="bg-purple-100 p-2 rounded-full flex-shrink-0">
-                                    <i class="fas fa-seedling text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800 mb-2">Primeiros Passos para Transformação</h4>
-                                    <p class="text-gray-600">Experimente os primeiros resultados já na consulta gratuita e entenda como continuar seu processo de cura.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="text-center md:text-left">
-                            <a href="#consultation-form" class="btn-gradient text-white py-4 px-8 rounded-full font-bold text-lg shadow-lg transform transition-all duration-300 hover:scale-105 inline-block">
-                                <i class="fas fa-calendar-check mr-2"></i>Agendar Minha Consulta Gratuita
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="order-first md:order-last">
-                        <div class="relative">
-                            <img src="https://i.ibb.co/vxSrmqR4/Pendulo-01-conscienciacomamor-patriciaghirello.jpg" class="rounded-2xl shadow-2xl w-full">
-                            <div class="absolute -bottom-6 -right-6 bg-purple-600 text-white py-3 px-6 rounded-full font-bold shadow-lg">
-                                <i class="fas fa-gem mr-2"></i> Diagnóstico Completo
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Benefícios da Radiestesia e Reiki</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Descubra como nosso método pode transformar sua vida, equilibrando energias e promovendo bem-estar em todos os níveis.</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-brain text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Clareza Mental</h3>
-                    <p class="text-gray-600">Elimine a confusão mental e recupere o foco e a concentração para tomar melhores decisões em sua vida.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-balance-scale text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Equilíbrio Emocional</h3>
-                    <p class="text-gray-600">Liberte-se de padrões emocionais negativos e desenvolva maior resiliência frente aos desafios.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-bed text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Sono Restaurador</h3>
-                    <p class="text-gray-600">Recupere a qualidade do seu sono e acorde com mais energia e disposição para suas atividades diárias.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-shield-alt text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Sistema Imunológico</h3>
-                    <p class="text-gray-600">Fortaleça suas defesas naturais e aumente sua resistência contra doenças e desequilíbrios.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-heart text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Relacionamentos Saudáveis</h3>
-                    <p class="text-gray-600">Melhore suas conexões pessoais e profissionais através do equilíbrio energético e emocional.</p>
-                </div>
-                
-                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-coins text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-4">Prosperidade</h3>
-                    <p class="text-gray-600">Remova bloqueios energéticos que impedem o fluxo de abundância e prosperidade em sua vida.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bonus Section -->
-    <section class="py-20 bg-gradient-to-br from-purple-600 to-purple-800 text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
-                <div class="inline-block bg-yellow-400 text-purple-900 px-6 py-2 rounded-full font-bold text-lg mb-6">
-                    <i class="fas fa-gift mr-2"></i>BÔNUS EXCLUSIVO
-                </div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ganhe Acesso GRATUITO ao Nosso Grupo VIP!</h2>
-                <p class="text-xl opacity-90 max-w-3xl mx-auto">Além da sua consulta gratuita, você receberá acesso exclusivo ao nosso grupo privado com conteúdos especiais e suporte contínuo.</p>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-8"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 text-center">
-                    <div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-users text-purple-900 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Comunidade Exclusiva</h3>
-                    <p class="opacity-90">Conecte-se com outras pessoas em jornada de transformação energética e compartilhe experiências.</p>
-                </div>
-                
-                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 text-center">
-                    <div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-book-open text-purple-900 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Conteúdo Exclusivo</h3>
-                    <p class="opacity-90">Receba dicas, exercícios e técnicas avançadas de radiestesia e harmonização energética.</p>
-                </div>
-                
-                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 text-center">
-                    <div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                        <i class="fas fa-headset text-purple-900 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Suporte Contínuo</h3>
-                    <p class="opacity-90">Tire dúvidas diretamente com nossa terapeuta e receba orientações personalizadas.</p>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <div class="bg-yellow-400 text-purple-900 p-6 rounded-2xl max-w-2xl mx-auto mb-8">
-                    <h3 class="text-2xl font-bold mb-2">🎁 VALOR DO BÔNUS: R$ 297,00</h3>
-                    <p class="text-lg font-semibold">GRÁTIS para quem agendar a consulta hoje!</p>
-                </div>
-                
-                <a href="#consultation-form" class="bg-white text-purple-600 py-4 px-8 rounded-full text-lg font-bold hover:bg-yellow-50 transition-colors inline-block">
-                    <i class="fas fa-calendar-check mr-2"></i>QUERO MINHA CONSULTA + BÔNUS GRÁTIS
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section class="py-20 hero-gradient text-white">
-        <div class="container mx-auto px-6 text-center">
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white border-opacity-20">
-                    <div class="text-6xl mb-6">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h2 class="text-2xl md:text-3xl font-bold mb-4">Nossa Garantia Exclusiva</h2>
-                </div>
-                
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Garantimos que em apenas 1 sessão você encontrará as causas dos seus bloqueios, e o melhor, de GRAÇA!</h2>
-                
-                <p class="text-xl mb-8 opacity-90">Você não tem nada a perder e tudo a ganhar ao experimentar nossa consulta gratuita.</p>
-                
-                <a href="#consultation-form" class="bg-white text-purple-600 py-4 px-8 rounded-full text-lg font-bold hover:bg-purple-50 transition-colors">
-                    <i class="fas fa-shield-alt mr-2"></i> Garantir Minha Vaga
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">O Que Nossos Clientes Dizem</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Veja como a Radiestesia e Reiki transformou a vida de pessoas reais, com resultados desde a primeira sessão.</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <img src="https://i.ibb.co/m5MDXpkv/Captura-de-tela-2025-09-16-155330.png" alt="Mariana Silva" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-800">Raphaela Barcelos</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"O tratamento me trouxe uma leveza enorme, equilíbrio e uma sensação de paz que eu não sentia há muito tempo. A dedicação, sensibilidade e cuidado da Eliane fez toda a diferença. Foi uma experiência transformadora e sou muito grata."</p>
-                    <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm inline-block">
-                        Problema resolvido: Insônia
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Carlos Mendes" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-800">Maria Célia</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"Em 2024, vivia um período de angústia e conflitos internos. Foi então que conheci o método da Eliane. As sessões foram transformadoras: me reconectei comigo mesma e encontrei novos caminhos. Minha vida mudou de forma profunda no pessoal, psíquico e emocional. Sou outra pessoa e quero repetir sempre que puder. Gratidão!"</p>
-                    <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm inline-block">
-                        Problema resolvido: Ansiedade
-                    </div>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Fernanda Costa" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold text-gray-800">Fernanda Costa</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 mb-4">"Minha dor crônica nas costas não respondia a nenhum tratamento convencional. Na consulta gratuita, descobri que havia um bloqueio energético relacionado a um trauma antigo. Após o tratamento, a dor diminuiu 80%!"</p>
-                    <div class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm inline-block">
-                        Problema resolvido: Dor crônica
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Testimonials Section -->
-    <section id="video-testimonials" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Depoimentos em Vídeo</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Assista aos depoimentos reais de pessoas que transformaram suas vidas após descobrirem seus bloqueios energéticos em nossa consulta gratuita.</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-                    <div class="video-wrapper">
-                      <iframe src="https://player.vimeo.com/video/1119220551"
-                        width="100%" height="315"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen>
-                      </iframe>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-gray-800 mb-2">Simone Rodrigues</h4>
-                        <p class="text-gray-600">"Como a Radiestesia identificou a causa da minha enxaqueca crônica"</p>
-                    </div>
-                </div>
-               <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-  <div class="video-wrapper">
-    <iframe src="https://player.vimeo.com/video/1119220551"
-      frameborder="0"
-      allow="autoplay; fullscreen; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-  <div class="p-6">
-    <h4 class="font-bold text-gray-800 mb-2">Simone Rodrigues</h4>
-    <p class="text-gray-600">"Como a Radiestesia identificou a causa da minha enxaqueca crônica"</p>
-  </div>
+<!-- Header/Navigation -->
+<header class="fixed w-full bg-white shadow-md z-50">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center">
+<i class="fas fa-spa text-3xl text-purple-600 mr-3" style="line-height: 1;"></i>
+<span class="text-xl font-bold text-gray-800" style="line-height: 1;">Método<span class="text-purple-600">Florecer</span></span>
 </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-gray-800 mb-2">Roberto</h4>
-                        <p class="text-gray-600">"De cético a defensor: minha jornada com Radiestesia"</p>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
-                    <div class="video-wrapper">
-                        <div class="video-placeholder" onclick="loadVideo(this, 'dQw4w9WgXcQ')">
-                            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Depoimento Juliana" class="video-thumbnail">
+<nav class="hidden md:flex space-x-8">
+<a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">Sobre</a>
+<a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium">Benefícios</a>
+<a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Depoimentos</a>
+<a href="#video-testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Vídeos</a>
+</nav>
+<div class="md:hidden">
+<button id="menu-btn" class="text-gray-700 focus:outline-none">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 shadow-lg">
+<div class="flex flex-col space-y-4">
+<a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">Sobre</a>
+<a href="#benefits" class="text-gray-700 hover:text-purple-600 font-medium">Benefícios</a>
+<a href="#testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Depoimentos</a>
+<a href="#video-testimonials" class="text-gray-700 hover:text-purple-600 font-medium">Vídeos</a>
+<a href="#consultation-form" class="btn-gradient text-white py-2 px-6 rounded-full text-center font-medium">Quero minha consulta gratuita</a>
+</div>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-gradient pt-32 pb-10 text-white relative overflow-hidden">
+<div class="container mx-auto px-6">
+<!-- Limited Spots Alert -->
+<div class="text-center mb-8">
+<span class="limited-spots">
+<i class="fas fa-exclamation-circle mr-2"></i>VAGAS LIMITADAS: Apenas 10 consultas gratuitas disponíveis esta semana
+</span>
+</div>
+
+<!-- Vídeo Principal -->
+<div class="mb-8 max-w-4xl mx-auto px-4 md:px-0">
+<div class="video-wrapper shadow-2xl">
+<div class="video-placeholder" id="main-video-placeholder">
+<img src="video_main_thumbnail_free.png" alt="Consulta Gratuita de Radiestesia e Reiki" class="video-thumbnail">
+<div class="play-button-overlay">
+<div class="play-icon">
+<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+</div>
+<iframe id="main-youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1" title="Consulta Gratuita de Radiestesia e Humanoterapia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none;"></iframe>
+</div>
+</div>
+
+<!-- Countdown Timer -->
+<div class="text-center mb-8">
+<h3 class="text-2xl font-bold mb-4">Esta oferta expira em:</h3>
+<div class="countdown-timer" id="countdown">
+<div class="countdown-box">
+<span class="countdown-number" id="days">01</span>
+<span class="countdown-label">Dias</span>
+</div>
+<div class="countdown-box">
+<span class="countdown-number" id="hours">23</span>
+<span class="countdown-label">Horas</span>
+</div>
+<div class="countdown-box">
+<span class="countdown-number" id="minutes">59</span>
+<span class="countdown-label">Minutos</span>
+</div>
+<div class="countdown-box">
+<span class="countdown-number" id="seconds">59</span>
+<span class="countdown-label">Segundos</span>
+</div>
+</div>
+</div>
+
+<!-- Formulário de Inscrição -->
+<div class="max-w-2xl mx-auto mb-12 px-4 md:px-0" id="consultation-form">
+<div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-2xl border border-white border-opacity-30">
+<div class="text-center mb-6">
+<h3 class="text-xl md:text-2xl lg:text-3xl font-bold mb-2">Garante Sua Vaga Agora!</h3>
+<p class="text-base md:text-lg opacity-90">Preencha os dados abaixo e receba sua consulta gratuita</p>
+</div>
+
+<form action="https://formsubmit.co/energia.viva77@gmail.com" method="POST" id="consultation-form" class="space-y-4 md:space-y-6">
+<!-- FormSubmit Configuration -->
+<input type="hidden" name="_next" value="https://chat.whatsapp.com/Hn6FghsSjOp1AxRiSpds1U">
+<input type="hidden" name="_subject" value="Nova Consulta Gratuita - Radiestesia">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+<div class="form-group md:col-span-2 lg:col-span-1">
+<label for="nome" class="block text-sm font-medium mb-2 text-white">Nome Completo *</label>
+<input type="text" id="nome" name="nome" required 
+class="w-full px-4 py-3 md:py-3 rounded-lg bg-white bg-opacity-90 border border-transparent focus:border-purple-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all duration-300 text-gray-800 placeholder-gray-500 text-base"
+placeholder="Digite seu nome completo">
+</div>
+
+<div class="form-group">
+<label for="telefone" class="block text-sm font-medium mb-2 text-white">Telefone/WhatsApp *</label>
+<input type="tel" id="telefone" name="telefone" required 
+class="w-full px-4 py-3 md:py-3 rounded-lg bg-white bg-opacity-90 border border-transparent focus:border-purple-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all duration-300 text-gray-800 placeholder-gray-500 text-base"
+placeholder="(11) 99999-9999">
+</div>
+</div>
+
+<div class="form-group">
+<label for="email" class="block text-sm font-medium mb-2 text-white">E-mail *</label>
+<input type="email" id="email" name="email" required 
+class="w-full px-4 py-3 md:py-3 rounded-lg bg-white bg-opacity-90 border border-transparent focus:border-purple-300 focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-200 transition-all duration-300 text-gray-800 placeholder-gray-500 text-base"
+placeholder="seu@email.com">
+</div>
+
+<div class="text-center pt-4">
+<button type="submit" class="btn-gradient text-white py-4 px-8 md:px-12 rounded-full text-lg md:text-xl font-bold shadow-lg transform transition-all duration-300 hover:scale-105 w-full md:w-auto">
+<i class="fas fa-calendar-check mr-3"></i>QUERO GARANTIR MEU LUGAR
+</button>
+</div>
+
+<div class="text-center text-xs md:text-sm opacity-80 mt-4">
+<i class="fas fa-lock mr-1"></i>Seus dados estão seguros e protegidos
+</div>
+</form>
+</div>
+</div>
+
+<div class="flex flex-col md:flex-row items-center justify-center pt-6">
+<div class="md:w-1/2 mb-12 md:mb-0 text-center">
+<h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Agende sua <span class="text-purple-200">CONSULTA GRATUITA</span> de Radiestesia e Reiki</h1>
+<p class="text-xl mb-8">Descubra em apenas uma sessão os bloqueios energéticos que estão impedindo seu progresso. Essa é a proposta do nosso MÉTODO exclusivo de tratamento, onde utilizamos a Radiestesia e o Reiki para mapear e reequilibrar seu campo energético, promovendo saúde integral e clareza mental.</p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+<a href="#consultation-form" class="btn-gradient text-white py-4 px-8 rounded-full text-lg font-bold text-center">
+<i class="fab fa-whatsapp mr-2"></i>QUERO ADQUIRIR MINHA CONSULTA GRATUITA
+</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+<div class="relative">
+<img src="https://i1.sndcdn.com/artworks-000043329368-ijq7ke-t500x500.jpg" class="rounded-lg shadow-xl">
+<div class="absolute -bottom-6 -left-6 bg-purple-300 text-purple-900 py-2 px-6 rounded-full font-bold shadow-lg">
+<i class="fas fa-award mr-2"></i> Terapeuta Certificada
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Trust Indicators -->
+<section class="py-12 bg-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-wrap justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+<div class="flex items-center space-x-3">
+<div class="bg-purple-100 p-3 rounded-full">
+<i class="fas fa-users text-purple-600 text-2xl"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-gray-800">TOTALMENTE</div>
+<div class="text-gray-600">GRATUITO</div>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<div class="bg-yellow-100 p-3 rounded-full">
+<i class="fas fa-star text-yellow-500 text-2xl"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-gray-800">4.9/5</div>
+<div class="text-gray-600">Avaliações</div>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<div class="bg-green-100 p-3 rounded-full">
+<i class="fas fa-calendar-alt text-green-600 text-2xl"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-gray-800">5 Anos</div>
+<div class="text-gray-600">de Experiência</div>
+</div>
+</div>
+<div class="flex items-center space-x-3">
+<div class="bg-purple-100 p-3 rounded-full">
+<i class="fas fa-leaf text-purple-600 text-2xl"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-gray-800">100%</div>
+<div class="text-gray-600">Natural</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">O Que Você Vai Descobrir Na Sua Consulta Gratuita</h2>
+<div class="w-24 h-1 bg-purple-600 mx-auto mb-8"></div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+<div>
+<h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Diagnóstico Energético Completo</h3>
+<p class="text-lg text-gray-600 mb-8">Na sua consulta gratuita, você receberá um diagnóstico energético completo que revelará os bloqueios que estão impedindo seu progresso e bem-estar. Entenda as causas profundas dos seus desafios atuais.</p>
+
+<div class="space-y-6 mb-8">
+<div class="flex items-start space-x-4">
+<div class="bg-purple-100 p-2 rounded-full flex-shrink-0">
+<i class="fas fa-search text-purple-600"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Identificação de Bloqueios</h4>
+<p class="text-gray-600">Descubra quais desequilíbrios energéticos estão afetando sua saúde e bem-estar.</p>
+</div>
+</div>
+
+<div class="flex items-start space-x-4">
+<div class="bg-purple-100 p-2 rounded-full flex-shrink-0">
+<i class="fas fa-heart text-purple-600"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Plano de Harmonização</h4>
+<p class="text-gray-600">Receba um plano personalizado para restaurar seu equilíbrio energético natural.</p>
+</div>
+</div>
+
+<div class="flex items-start space-x-4">
+<div class="bg-purple-100 p-2 rounded-full flex-shrink-0">
+<i class="fas fa-seedling text-purple-600"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800 mb-2">Primeiros Passos para Transformação</h4>
+<p class="text-gray-600">Experimente os primeiros resultados já na consulta gratuita e entenda como continuar seu processo de cura.</p>
+</div>
+</div>
+</div>
+
+<div class="text-center md:text-left">
+<a href="#consultation-form" class="btn-gradient text-white py-4 px-8 rounded-full font-bold text-lg shadow-lg transform transition-all duration-300 hover:scale-105 inline-block">
+<i class="fas fa-calendar-check mr-2"></i>Agendar Minha Consulta Gratuita
+</a>
+</div>
+</div>
+
+<div class="order-first md:order-last">
+<div class="relative">
+<img src="https://i.ibb.co/vxSrmqR4/Pendulo-01-conscienciacomamor-patriciaghirello.jpg" class="rounded-2xl shadow-2xl w-full">
+<div class="absolute -bottom-6 -right-6 bg-purple-600 text-white py-3 px-6 rounded-full font-bold shadow-lg">
+<i class="fas fa-gem mr-2"></i> Diagnóstico Completo
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Benefits Section -->
+<section id="benefits" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Benefícios da Radiestesia e Reiki</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Descubra como nosso método pode transformar sua vida, equilibrando energias e promovendo bem-estar em todos os níveis.</p>
+<div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-brain text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Clareza Mental</h3>
+<p class="text-gray-600">Elimine a confusão mental e recupere o foco e a concentração para tomar melhores decisões em sua vida.</p>
+</div>
+
+<div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-balance-scale text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Equilíbrio Emocional</h3>
+<p class="text-gray-600">Liberte-se de padrões emocionais negativos e desenvolva maior resiliência frente aos desafios.</p>
+</div>
+
+<div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-bed text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Sono Restaurador</h3>
+<p class="text-gray-600">Recupere a qualidade do seu sono e acorde com mais energia e disposição para suas atividades diárias.</p>
+</div>
+
+<div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-shield-alt text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Sistema Imunológico</h3>
+<p class="text-gray-600">Fortaleça suas defesas naturais e aumente sua resistência contra doenças e desequilíbrios.</p>
+</div>
+
+<div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-pink-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-heart text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Relacionamentos Saudáveis</h3>
+<p class="text-gray-600">Melhore suas conexões pessoais e profissionais através do equilíbrio energético e emocional.</p>
+</div>
+
+<div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+<div class="bg-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+<i class="fas fa-coins text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-4">Prosperidade</h3>
+<p class="text-gray-600">Remova bloqueios energéticos que impedem o fluxo de abundância e prosperidade em sua vida.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Bonus Section -->
+<section class="py-20 bg-gradient-to-br from-purple-600 to-purple-800 text-white relative overflow-hidden">
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="text-center mb-16">
+<div class="inline-block bg-yellow-400 text-purple-900 px-6 py-2 rounded-full font-bold text-lg mb-6">
+<i class="fas fa-gift mr-2"></i>BÔNUS EXCLUSIVO
+</div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Ganhe Acesso GRATUITO ao Nosso Grupo VIP!</h2>
+<p class="text-xl opacity-90 max-w-3xl mx-auto">Além da sua consulta gratuita, você receberá acesso exclusivo ao nosso grupo privado com conteúdos especiais e suporte contínuo.</p>
+<div class="w-24 h-1 bg-yellow-400 mx-auto mt-8"></div>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 text-center">
+<div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+<i class="fas fa-users text-purple-900 text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Comunidade Exclusiva</h3>
+<p class="opacity-90">Conecte-se com outras pessoas em jornada de transformação energética e compartilhe experiências.</p>
+</div>
+
+<div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 text-center">
+<div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+<i class="fas fa-book-open text-purple-900 text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Conteúdo Exclusivo</h3>
+<p class="opacity-90">Receba dicas, exercícios e técnicas avançadas de radiestesia e harmonização energética.</p>
+</div>
+
+<div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl border border-white border-opacity-20 text-center">
+<div class="bg-yellow-400 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+<i class="fas fa-headset text-purple-900 text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-4">Suporte Contínuo</h3>
+<p class="opacity-90">Tire dúvidas diretamente com nossa terapeuta e receba orientações personalizadas.</p>
+</div>
+</div>
+
+<div class="text-center mt-12">
+<div class="bg-yellow-400 text-purple-900 p-6 rounded-2xl max-w-2xl mx-auto mb-8">
+<h3 class="text-2xl font-bold mb-2">🎁 VALOR DO BÔNUS: R$ 297,00</h3>
+<p class="text-lg font-semibold">GRÁTIS para quem agendar a consulta hoje!</p>
+</div>
+
+<a href="#consultation-form" class="bg-white text-purple-600 py-4 px-8 rounded-full text-lg font-bold hover:bg-yellow-50 transition-colors inline-block">
+<i class="fas fa-calendar-check mr-2"></i>QUERO MINHA CONSULTA + BÔNUS GRÁTIS
+</a>
+</div>
+</div>
+</section>
+
+<!-- Guarantee Section -->
+<section class="py-20 hero-gradient text-white">
+<div class="container mx-auto px-6 text-center">
+<div class="max-w-4xl mx-auto">
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white border-opacity-20">
+<div class="text-6xl mb-6">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h2 class="text-2xl md:text-3xl font-bold mb-4">Nossa Garantia Exclusiva</h2>
+</div>
+
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Garantimos que em apenas 1 sessão você encontrará as causas dos seus bloqueios, e o melhor, de GRAÇA!</h2>
+
+<p class="text-xl mb-8 opacity-90">Você não tem nada a perder e tudo a ganhar ao experimentar nossa consulta gratuita.</p>
+
+<a href="#consultation-form" class="bg-white text-purple-600 py-4 px-8 rounded-full text-lg font-bold hover:bg-purple-50 transition-colors">
+<i class="fas fa-shield-alt mr-2"></i> Garantir Minha Vaga
+</a>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">O Que Nossos Clientes Dizem</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Veja como a Radiestesia e Reiki transformou a vida de pessoas reais, com resultados desde a primeira sessão.</p>
+<div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://i.ibb.co/m5MDXpkv/Captura-de-tela-2025-09-16-155330.png" alt="Mariana Silva" class="w-12 h-12 rounded-full mr-4">
+<div>
+<h4 class="font-bold text-gray-800">Raphaela Barcelos</h4>
+<div class="flex text-yellow-400">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"O tratamento me trouxe uma leveza enorme, equilíbrio e uma sensação de paz que eu não sentia há muito tempo. A dedicação, sensibilidade e cuidado da Eliane fez toda a diferença. Foi uma experiência transformadora e sou muito grata."</p>
+<div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm inline-block">
+Problema resolvido: Insônia
+</div>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Carlos Mendes" class="w-12 h-12 rounded-full mr-4">
+<div>
+<h4 class="font-bold text-gray-800">Maria Célia</h4>
+<div class="flex text-yellow-400">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"Em 2024, vivia um período de angústia e conflitos internos. Foi então que conheci o método da Eliane. As sessões foram transformadoras: me reconectei comigo mesma e encontrei novos caminhos. Minha vida mudou de forma profunda no pessoal, psíquico e emocional. Sou outra pessoa e quero repetir sempre que puder. Gratidão!"</p>
+<div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm inline-block">
+Problema resolvido: Ansiedade
+</div>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="flex items-center mb-6">
+<img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Fernanda Costa" class="w-12 h-12 rounded-full mr-4">
+<div>
+<h4 class="font-bold text-gray-800">Fernanda Costa</h4>
+<div class="flex text-yellow-400">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"Minha dor crônica nas costas não respondia a nenhum tratamento convencional. Na consulta gratuita, descobri que havia um bloqueio energético relacionado a um trauma antigo. Após o tratamento, a dor diminuiu 80%!"</p>
+<div class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm inline-block">
+Problema resolvido: Dor crônica
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Video Testimonials Section -->
+<section id="video-testimonials" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Depoimentos em Vídeo</h2>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto">Assista aos depoimentos reais de pessoas que transformaram suas vidas após descobrirem seus bloqueios energéticos em nossa consulta gratuita.</p>
+<div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+<div class="video-wrapper">
+                        <div class="video-placeholder" onclick="loadVimeo(this, '1119220551')">
+                            <img src="<img src="https://vimeo.com/1119220551" alt="Depoimento Ana Paula" class="video-thumbnail">
                             <div class="play-button-overlay">
                                 <div class="play-icon">
                                     <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="p-6">
-                        <h4 class="font-bold text-gray-800 mb-2">Juliana</h4>
-                        <p class="text-gray-600">"Como superei a ansiedade após descobrir meus bloqueios energéticos"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                      <iframe src="https://player.vimeo.com/video/1119220551"
+                        width="100%" height="315"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+</div>
+<div class="p-6">
+<h4 class="font-bold text-gray-800 mb-2">Simone Rodrigues</h4>
+<p class="text-gray-600">"Como a Radiestesia identificou a causa da minha enxaqueca crônica"</p>
+</div>
+</div>
 
-    <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Perguntas Frequentes</h2>
-                <p class="text-xl text-gray-600">Tire suas dúvidas sobre a consulta gratuita de Radiestesia e Reiki.</p>
-                <div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
-            </div>
-            
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
-                        <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-gray-800">O que acontece durante a consulta gratuita?</h3>
-                            <i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
-                        </div>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">Durante a consulta gratuita, realizamos um diagnóstico energético completo usando técnicas de radiestesia para identificar bloqueios e desequilíbrios. Você receberá orientações personalizadas e experimentará os primeiros resultados já na sessão.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
-                        <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-gray-800">A consulta é realmente gratuita? Não tem pegadinha?</h3>
-                            <i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
-                        </div>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">Sim, a consulta é 100% gratuita! Não há custos ocultos ou pegadinhas. Oferecemos esta oportunidade para que você possa experimentar os benefícios da nossa abordagem sem compromisso financeiro.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
-                        <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-gray-800">Como funciona a Comunidade Exclusiva?</h3>
-                            <i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
-                        </div>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600"> Na comunidade exclusiva no WhatsApp, você receberá harmonizações coletivas e conteúdos diários para fortalecer seu equilíbrio energético. É como se a transformação começasse antes mesmo da sua consulta e o melhor, sem precisar gastar nada</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
-                        <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-gray-800">Quantas vagas gratuitas estão disponíveis?</h3>
-                            <i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
-                        </div>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">Disponibilizamos apenas 10 consultas gratuitas por semana para garantir atendimento personalizado e de qualidade. As vagas são preenchidas por ordem de inscrição.</p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
-                        <div class="flex justify-between items-center">
-                            <h3 class="text-lg font-semibold text-gray-800">A consulta precisa ser presencial?</h3>
-                            <i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
-                        </div>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6">
-                        <p class="text-gray-600">Não nossas consultas são todas online. Nosso método funciona perfeitamente à distância, então você pode fazer a consulta do conforto da sua casa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+<div class="video-wrapper">
+<div class="video-placeholder" onclick="loadVideo(this, 'dQw4w9WgXcQ')">
+<img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Depoimento Roberto" class="video-thumbnail">
+<div class="play-button-overlay">
+<div class="play-icon">
+<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h4 class="font-bold text-gray-800 mb-2">Roberto</h4>
+<p class="text-gray-600">"De cético a defensor: minha jornada com Radiestesia"</p>
+</div>
+</div>
 
-    <!-- Final CTA Section -->
-    <section class="py-20 hero-gradient text-white text-center">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Não Perca Esta Oportunidade!</h2>
-                <p class="text-xl mb-8 opacity-90">Agende agora sua consulta gratuita e descubra os bloqueios que estão impedindo seu progresso. Lembre-se: são apenas 10 vagas disponíveis esta semana!</p>
-                
-                <!-- Countdown Timer -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4">Esta oferta expira em:</h3>
-                    <div class="countdown-timer" id="countdown-final">
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="days-final">01</span>
-                            <span class="countdown-label">Dias</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="hours-final">23</span>
-                            <span class="countdown-label">Horas</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="minutes-final">59</span>
-                            <span class="countdown-label">Minutos</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-number" id="seconds-final">59</span>
-                            <span class="countdown-label">Segundos</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <a href="#consultation-form" class="bg-white text-purple-600 py-4 px-12 rounded-full text-xl font-bold hover:bg-purple-50 transition-colors inline-block mb-6">
-                    <i class="fab fa-whatsapp mr-2"></i> QUERO ADQUIRIR MINHA CONSULTA GRATUITA
-                </a>
-                
-                <div class="text-center">
-                    <span class="limited-spots">
-                        Vagas limitadas! Apenas 10 consultas gratuitas disponíveis esta semana
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+<div class="video-wrapper">
+<div class="video-placeholder" onclick="loadVideo(this, 'dQw4w9WgXcQ')">
+<img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Depoimento Juliana" class="video-thumbnail">
+<div class="play-button-overlay">
+<div class="play-icon">
+<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h4 class="font-bold text-gray-800 mb-2">Juliana</h4>
+<p class="text-gray-600">"Como superei a ansiedade após descobrir meus bloqueios energéticos"</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-spa text-2xl text-purple-400 mr-2"></i>
-                        <span class="text-xl font-bold">Harmonia<span class="text-purple-400">Energética</span></span>
-                    </div>
-                    <p class="text-gray-400">Transformando vidas através da Radiestesia e Reiki há mais de 5 anos.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Serviços</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>Consulta Gratuita</li>
-                        <li>Radiestesia</li>
-                        <li>Reiki</li>
-                        <li>Diagnóstico Energético</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><i class="fas fa-phone mr-2"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-envelope mr-2"></i> contato@harmoniaenergetica.com</li>
-                        <li><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Redes Sociais</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
-                            <i class="fab fa-facebook text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
-                            <i class="fab fa-instagram text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
-                            <i class="fab fa-youtube text-2xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
-                            <i class="fab fa-whatsapp text-2xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Harmonia Energética. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+<!-- FAQ Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Perguntas Frequentes</h2>
+<p class="text-xl text-gray-600">Tire suas dúvidas sobre a consulta gratuita de Radiestesia e Reiki.</p>
+<div class="w-24 h-1 bg-purple-600 mx-auto mt-8"></div>
+</div>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+<button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-800">O que acontece durante a consulta gratuita?</h3>
+<i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
+</div>
+</button>
+<div class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600">Durante a consulta gratuita, realizamos um diagnóstico energético completo usando técnicas de radiestesia para identificar bloqueios e desequilíbrios. Você receberá orientações personalizadas e experimentará os primeiros resultados já na sessão.</p>
+</div>
+</div>
 
-        // Video loading function
-        function loadVideo(placeholder, videoId) {
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            iframe.width = '560';
-            iframe.height = '315';
-            iframe.frameBorder = '0';
-            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-            iframe.allowFullscreen = true;
-            iframe.style.position = 'absolute';
-            iframe.style.top = '0';
-            iframe.style.left = '0';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.borderRadius = '12px';
-            
-            placeholder.parentNode.appendChild(iframe);
-            placeholder.style.display = 'none';
-        }
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+<button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-800">A consulta é realmente gratuita? Não tem pegadinha?</h3>
+<i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
+</div>
+</button>
+<div class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600">Sim, a consulta é 100% gratuita! Não há custos ocultos ou pegadinhas. Oferecemos esta oportunidade para que você possa experimentar os benefícios da nossa abordagem sem compromisso financeiro.</p>
+</div>
+</div>
 
-        // Main video loading
-        document.getElementById('main-video-placeholder').addEventListener('click', function() {
-            const iframe = document.getElementById('main-youtube-video');
-            iframe.style.display = 'block';
-            iframe.src = iframe.src.replace('?enablejsapi=1', '?autoplay=1&enablejsapi=1');
-            this.style.display = 'none';
-        });
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+<button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-800">Como funciona a Comunidade Exclusiva?</h3>
+<i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
+</div>
+</button>
+<div class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600"> Na comunidade exclusiva no WhatsApp, você receberá harmonizações coletivas e conteúdos diários para fortalecer seu equilíbrio energético. É como se a transformação começasse antes mesmo da sua consulta e o melhor, sem precisar gastar nada</p>
+</div>
+</div>
 
-        // FAQ toggle function
-        function toggleFAQ(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('i');
-            
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+<button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-800">Quantas vagas gratuitas estão disponíveis?</h3>
+<i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
+</div>
+</button>
+<div class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600">Disponibilizamos apenas 10 consultas gratuitas por semana para garantir atendimento personalizado e de qualidade. As vagas são preenchidas por ordem de inscrição.</p>
+</div>
+</div>
 
-        // Countdown timer function
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            tomorrow.setHours(23, 59, 59, 999);
-            const distance = tomorrow.getTime() - now;
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+<button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-semibold text-gray-800">A consulta precisa ser presencial?</h3>
+<i class="fas fa-chevron-down text-purple-600 transform transition-transform"></i>
+</div>
+</button>
+<div class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600">Não nossas consultas são todas online. Nosso método funciona perfeitamente à distância, então você pode fazer a consulta do conforto da sua casa.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+<!-- Final CTA Section -->
+<section class="py-20 hero-gradient text-white text-center">
+<div class="container mx-auto px-6">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Não Perca Esta Oportunidade!</h2>
+<p class="text-xl mb-8 opacity-90">Agende agora sua consulta gratuita e descubra os bloqueios que estão impedindo seu progresso. Lembre-se: são apenas 10 vagas disponíveis esta semana!</p>
 
-            // Update main countdown
-            document.getElementById('days').textContent = days.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+<!-- Countdown Timer -->
+<div class="mb-8">
+<h3 class="text-2xl font-bold mb-4">Esta oferta expira em:</h3>
+<div class="countdown-timer" id="countdown-final">
+<div class="countdown-box">
+<span class="countdown-number" id="days-final">01</span>
+<span class="countdown-label">Dias</span>
+</div>
+<div class="countdown-box">
+<span class="countdown-number" id="hours-final">23</span>
+<span class="countdown-label">Horas</span>
+</div>
+<div class="countdown-box">
+<span class="countdown-number" id="minutes-final">59</span>
+<span class="countdown-label">Minutos</span>
+</div>
+<div class="countdown-box">
+<span class="countdown-number" id="seconds-final">59</span>
+<span class="countdown-label">Segundos</span>
+</div>
+</div>
+</div>
 
-            // Update final countdown
-            if (document.getElementById('days-final')) {
-                document.getElementById('days-final').textContent = days.toString().padStart(2, '0');
-                document.getElementById('hours-final').textContent = hours.toString().padStart(2, '0');
-                document.getElementById('minutes-final').textContent = minutes.toString().padStart(2, '0');
-                document.getElementById('seconds-final').textContent = seconds.toString().padStart(2, '0');
-            }
+<a href="#consultation-form" class="bg-white text-purple-600 py-4 px-12 rounded-full text-xl font-bold hover:bg-purple-50 transition-colors inline-block mb-6">
+<i class="fab fa-whatsapp mr-2"></i> QUERO ADQUIRIR MINHA CONSULTA GRATUITA
+</a>
 
-            if (distance < 0) {
-                // Reset countdown for next day
-                setTimeout(updateCountdown, 1000);
-            } else {
-                setTimeout(updateCountdown, 1000);
-            }
-        }
-        
-        // Initialize countdown
-        updateCountdown();
+<div class="text-center">
+<span class="limited-spots">
+Vagas limitadas! Apenas 10 consultas gratuitas disponíveis esta semana
+</span>
+</div>
+</div>
+</div>
+</section>
 
-        // Phone mask - mantendo apenas a máscara de telefone
-        document.getElementById('telefone').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            
-            if (value.length >= 11) {
-                value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
-            } else if (value.length >= 7) {
-                value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
-            } else if (value.length >= 3) {
-                value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
-            } else if (value.length >= 1) {
-                value = value.replace(/(\d{0,2})/, '($1');
-            }
-            
-            e.target.value = value;
-        });
-    </script>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<i class="fas fa-spa text-2xl text-purple-400 mr-2"></i>
+<span class="text-xl font-bold">Harmonia<span class="text-purple-400">Energética</span></span>
+</div>
+<p class="text-gray-400">Transformando vidas através da Radiestesia e Reiki há mais de 5 anos.</p>
+</div>
+
+<div>
+<h4 class="text-lg font-semibold mb-4">Serviços</h4>
+<ul class="space-y-2 text-gray-400">
+<li>Consulta Gratuita</li>
+<li>Radiestesia</li>
+<li>Reiki</li>
+<li>Diagnóstico Energético</li>
+</ul>
+</div>
+
+<div>
+<h4 class="text-lg font-semibold mb-4">Contato</h4>
+<ul class="space-y-2 text-gray-400">
+<li><i class="fas fa-phone mr-2"></i> (11) 99999-9999</li>
+<li><i class="fas fa-envelope mr-2"></i> contato@harmoniaenergetica.com</li>
+<li><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</li>
+</ul>
+</div>
+
+<div>
+<h4 class="text-lg font-semibold mb-4">Redes Sociais</h4>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+<i class="fab fa-facebook text-2xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+<i class="fab fa-instagram text-2xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+<i class="fab fa-youtube text-2xl"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+<i class="fab fa-whatsapp text-2xl"></i>
+</a>
+</div>
+</div>
+</div>
+
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2024 Harmonia Energética. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu toggle
+document.getElementById('menu-btn').addEventListener('click', function() {
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenu.classList.toggle('hidden');
+});
+
+// Video loading function
+function loadVideo(placeholder, videoId) {
+const iframe = document.createElement('iframe');
+iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+iframe.width = '560';
+iframe.height = '315';
+iframe.frameBorder = '0';
+iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+iframe.allowFullscreen = true;
+iframe.style.position = 'absolute';
+iframe.style.top = '0';
+iframe.style.left = '0';
+iframe.style.width = '100%';
+iframe.style.height = '100%';
+iframe.style.borderRadius = '12px';
+
+placeholder.parentNode.appendChild(iframe);
+placeholder.style.display = 'none';
+}
+
+// Main video loading
+document.getElementById('main-video-placeholder').addEventListener('click', function() {
+const iframe = document.getElementById('main-youtube-video');
+iframe.style.display = 'block';
+iframe.src = iframe.src.replace('?enablejsapi=1', '?autoplay=1&enablejsapi=1');
+this.style.display = 'none';
+});
+
+// FAQ toggle function
+function toggleFAQ(button) {
+const content = button.nextElementSibling;
+const icon = button.querySelector('i');
+
+content.classList.toggle('hidden');
+icon.classList.toggle('rotate-180');
+}
+
+// Countdown timer function
+function updateCountdown() {
+const now = new Date().getTime();
+const tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+tomorrow.setHours(23, 59, 59, 999);
+const distance = tomorrow.getTime() - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Update main countdown
+document.getElementById('days').textContent = days.toString().padStart(2, '0');
+document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+// Update final countdown
+if (document.getElementById('days-final')) {
+document.getElementById('days-final').textContent = days.toString().padStart(2, '0');
+document.getElementById('hours-final').textContent = hours.toString().padStart(2, '0');
+document.getElementById('minutes-final').textContent = minutes.toString().padStart(2, '0');
+document.getElementById('seconds-final').textContent = seconds.toString().padStart(2, '0');
+}
+
+if (distance < 0) {
+// Reset countdown for next day
+setTimeout(updateCountdown, 1000);
+} else {
+setTimeout(updateCountdown, 1000);
+}
+}
+
+// Initialize countdown
+updateCountdown();
+
+// Phone mask - mantendo apenas a máscara de telefone
+document.getElementById('telefone').addEventListener('input', function(e) {
+let value = e.target.value.replace(/\D/g, '');
+
+if (value.length >= 11) {
+value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+} else if (value.length >= 7) {
+value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+} else if (value.length >= 3) {
+value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+} else if (value.length >= 1) {
+value = value.replace(/(\d{0,2})/, '($1');
+}
+
+e.target.value = value;
+});
+</script>
 </body>
 </html>
